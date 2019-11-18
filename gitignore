@@ -4,3 +4,7 @@
 /WorkSpace/.recommenders/
 /WorkSpace/RemoteSystemsTempFiles/
 *.class
+/WorkSpace/SingleSignOn/.settings
+/WorkSpace/SingleSignOn/test-output
+/WorkSpace/SingleSignOn/target
+/WorkSpace/SingleSignOn/test-output/
