@@ -1,0 +1,6 @@
+/bin/
+/test-output/
+/WorkSpace/.metadata/
+/WorkSpace/.recommenders/
+/WorkSpace/RemoteSystemsTempFiles/
+*.class

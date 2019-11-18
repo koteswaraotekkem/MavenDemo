@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4918" started-at="2019-11-16T11:19:37Z" finished-at="2019-11-16T11:19:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4918" started-at="2019-11-16T11:19:37Z" finished-at="2019-11-16T11:19:42Z">
+      <class name="com.users.User.CreateUserTests">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.users.User.CreateUserTests@57baeedf]" name="beforeSuite" is-config="true" duration-ms="4168" started-at="2019-11-16T16:49:33Z" finished-at="2019-11-16T16:49:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.users.User.CreateUserTests@57baeedf]" name="beforeClass" is-config="true" duration-ms="4125" started-at="2019-11-16T16:49:37Z" finished-at="2019-11-16T16:49:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="createTempUser()[pri:0, instance:com.users.User.CreateUserTests@57baeedf]" name="createTempUser" duration-ms="15" started-at="2019-11-16T16:49:41Z" finished-at="2019-11-16T16:49:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTempUser -->
+        <test-method status="PASS" signature="createAdminUser()[pri:1, instance:com.users.User.CreateUserTests@57baeedf]" name="createAdminUser" duration-ms="50" started-at="2019-11-16T16:49:41Z" finished-at="2019-11-16T16:49:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAdminUser -->
+        <test-method status="PASS" signature="createSuperUser()[pri:2, instance:com.users.User.CreateUserTests@57baeedf]" name="createSuperUser" duration-ms="0" started-at="2019-11-16T16:49:41Z" finished-at="2019-11-16T16:49:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSuperUser -->
+        <test-method status="PASS" signature="createGlobalUser()[pri:3, instance:com.users.User.CreateUserTests@57baeedf]" name="createGlobalUser" duration-ms="717" started-at="2019-11-16T16:49:41Z" finished-at="2019-11-16T16:49:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createGlobalUser -->
+      </class> <!-- com.users.User.CreateUserTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
