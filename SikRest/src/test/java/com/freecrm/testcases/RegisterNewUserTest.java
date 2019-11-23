@@ -22,10 +22,8 @@ import com.freecrm.pages.LoginPage;
 import com.freecrm.util.DeviceAccessOperations;
 
 public class RegisterNewUserTest extends CrmTestBase {
+
 	
-	/*public RegisterNewUserTest(){
-		super();
-	}*/
 	
 	String filePath = "E:\\Data\\";
 	String fileName = "ReadMe.txt";
@@ -94,7 +92,7 @@ public class RegisterNewUserTest extends CrmTestBase {
 	
 	
 	
-	@Test
+	@Test(enabled=false)
 	public void readFromxl() throws Exception{
 		
 		SamplePOIRead samplePOIRead = new SamplePOIRead();
@@ -113,10 +111,6 @@ public class RegisterNewUserTest extends CrmTestBase {
 	
 	@Test(description="user creation")
 	public void signUp() throws Exception{
-
-		DeviceAccessOperations.killProcess("chromedriver");
-		initDriver();
-		
 		LoginPage loginPage = new LoginPage();
 		String titile = loginPage.getLoginPageTitile();
 		System.out.println(titile);
