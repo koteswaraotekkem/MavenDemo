@@ -110,7 +110,7 @@ public class RegisterNewUserTest extends CrmTestBase {
 	}
 	
 	@Test(description="user creation")
-	public void signUp() throws Exception{
+	public void loginAsSuperUser() throws Exception{
 		LoginPage loginPage = new LoginPage();
 		String titile = loginPage.getLoginPageTitile();
 		System.out.println(titile);
@@ -125,7 +125,7 @@ public class RegisterNewUserTest extends CrmTestBase {
 	
 	
 	
-	@Test(dataProvider="userCredentials")
+	@Test(dataProvider="userCredentials", enabled=false)
 	public void testDatapRovider(String uname , String pwd) throws IOException, InterruptedException{
 		//DeviceAccessOperations.killProcess("chromedriver");
 		

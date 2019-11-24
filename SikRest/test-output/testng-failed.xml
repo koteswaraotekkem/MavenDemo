@@ -6,7 +6,7 @@
       <class name="com.freecrm.testcases.RegisterNewUserTest">
         <methods>
           <include name="bfrclss"/>
-          <include name="signUp"/>
+          <include name="signUpTest"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.freecrm.testcases.RegisterNewUserTest -->

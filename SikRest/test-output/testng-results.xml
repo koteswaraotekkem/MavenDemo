@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46437" started-at="2019-11-23T17:53:12Z" finished-at="2019-11-23T17:53:58Z">
+  <suite name="Default suite" duration-ms="25585" started-at="2019-11-24T07:50:31Z" finished-at="2019-11-24T07:50:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46437" started-at="2019-11-23T17:53:12Z" finished-at="2019-11-23T17:53:58Z">
+    <test name="Default test" duration-ms="25585" started-at="2019-11-24T07:50:31Z" finished-at="2019-11-24T07:50:57Z">
       <class name="com.freecrm.testcases.RegisterNewUserTest">
-        <test-method status="PASS" signature="bfrclss()[pri:0, instance:com.freecrm.testcases.RegisterNewUserTest@e9fd99]" name="bfrclss" is-config="true" duration-ms="8888" started-at="2019-11-23T17:53:12Z" finished-at="2019-11-23T17:53:21Z">
+        <test-method status="PASS" signature="bfrclss()[pri:0, instance:com.freecrm.testcases.RegisterNewUserTest@1ec2012]" name="bfrclss" is-config="true" duration-ms="12905" started-at="2019-11-24T07:50:31Z" finished-at="2019-11-24T07:50:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bfrclss -->
-        <test-method status="PASS" signature="signUp()[pri:0, instance:com.freecrm.testcases.RegisterNewUserTest@e9fd99]" name="signUp" duration-ms="36874" started-at="2019-11-23T17:53:21Z" description="user creation" finished-at="2019-11-23T17:53:58Z">
+        <test-method status="PASS" signature="loginAsSuperUser()[pri:0, instance:com.freecrm.testcases.RegisterNewUserTest@1ec2012]" name="loginAsSuperUser" duration-ms="11982" started-at="2019-11-24T07:50:44Z" description="user creation" finished-at="2019-11-24T07:50:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signUp -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.freecrm.testcases.RegisterNewUserTest@e9fd99]" name="afterMethod" is-config="true" duration-ms="625" started-at="2019-11-23T17:53:58Z" finished-at="2019-11-23T17:53:58Z">
+        </test-method> <!-- loginAsSuperUser -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.freecrm.testcases.RegisterNewUserTest@1ec2012]" name="afterMethod" is-config="true" duration-ms="656" started-at="2019-11-24T07:50:56Z" finished-at="2019-11-24T07:50:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
