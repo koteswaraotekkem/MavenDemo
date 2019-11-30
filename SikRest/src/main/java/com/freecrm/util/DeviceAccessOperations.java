@@ -3,8 +3,6 @@ package com.freecrm.util;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import org.sikuli.basics.Settings;
-
 public class DeviceAccessOperations {
 	
 	public static void killProcess(String processName) throws IOException{
@@ -27,8 +25,7 @@ public class DeviceAccessOperations {
 	}
 	
 	public static String getOSType(){
-		System.out.println("OS Is : :"+Settings.getShortOS());
-		return Settings.getShortOS();
+	return System.getProperty("os.name").toLowerCase();
 	}
 
 }

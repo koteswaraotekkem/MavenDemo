@@ -1,12 +1,9 @@
 package com.freecrm.base;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.sikuli.basics.Settings;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -16,11 +13,9 @@ public class CRMTestBase {
 	public static Properties prop;
 	static String userWorkingDir = System.getProperty("user.dir");
 	private static String OS = System.getProperty("os.name").toLowerCase();
-	static String  osName = Settings.getShortOS();
 	
 	static{
 		System.out.println(OS);
-		System.out.println(osName);
 		prop = new Properties();
 
 		try {

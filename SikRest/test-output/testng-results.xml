@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24934" started-at="2019-11-30T09:32:52Z" finished-at="2019-11-30T09:33:17Z">
+  <suite name="Default suite" duration-ms="27701" started-at="2019-11-30T11:46:51Z" finished-at="2019-11-30T11:47:18Z">
     <groups>
       <group name="smoke">
-        <method signature="CopyOfCreateUserTest.createSuperUser()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="createSuperUser" class="client.core.CopyOfCreateUserTest"/>
+        <method signature="UserCreattionTest.createSuperUser()[pri:0, instance:client.core.UserCreattionTest@41eaa2]" name="createSuperUser" class="client.core.UserCreattionTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="24934" started-at="2019-11-30T09:32:52Z" finished-at="2019-11-30T09:33:17Z">
-      <class name="client.core.CopyOfCreateUserTest">
-        <test-method status="PASS" signature="beforeClassInTest()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="beforeClassInTest" is-config="true" duration-ms="9372" started-at="2019-11-30T09:32:52Z" finished-at="2019-11-30T09:33:02Z">
+    <test name="Default test" duration-ms="27701" started-at="2019-11-30T11:46:51Z" finished-at="2019-11-30T11:47:18Z">
+      <class name="client.core.UserCreattionTest">
+        <test-method status="PASS" signature="beforeClassInTest()[pri:0, instance:client.core.UserCreattionTest@41eaa2]" name="beforeClassInTest" is-config="true" duration-ms="10255" started-at="2019-11-30T11:46:51Z" finished-at="2019-11-30T11:47:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassInTest -->
-        <test-method status="PASS" signature="createSuperUser()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="createSuperUser" duration-ms="15516" started-at="2019-11-30T09:33:02Z" description="creating Super User" finished-at="2019-11-30T09:33:17Z">
+        <test-method status="PASS" signature="runbeforeMethod()[pri:0, instance:client.core.UserCreattionTest@41eaa2]" name="runbeforeMethod" is-config="true" duration-ms="0" started-at="2019-11-30T11:47:01Z" finished-at="2019-11-30T11:47:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runbeforeMethod -->
+        <test-method status="PASS" signature="createSuperUser()[pri:0, instance:client.core.UserCreattionTest@41eaa2]" name="createSuperUser" duration-ms="17420" started-at="2019-11-30T11:47:01Z" description="creating Super User" finished-at="2019-11-30T11:47:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createSuperUser -->
-        <test-method status="PASS" signature="runbeforeMethod()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="runbeforeMethod" is-config="true" duration-ms="0" started-at="2019-11-30T09:33:02Z" finished-at="2019-11-30T09:33:02Z">
+        <test-method status="PASS" signature="runbeforeMethod()[pri:0, instance:client.core.UserCreattionTest@41eaa2]" name="runbeforeMethod" is-config="true" duration-ms="1" started-at="2019-11-30T11:47:18Z" finished-at="2019-11-30T11:47:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runbeforeMethod -->
-        <test-method status="PASS" signature="runbeforeMethod()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="runbeforeMethod" is-config="true" duration-ms="1" started-at="2019-11-30T09:33:17Z" finished-at="2019-11-30T09:33:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runbeforeMethod -->
-        <test-method status="PASS" signature="createAdminUser()[pri:1, instance:client.core.CopyOfCreateUserTest@f777e8]" name="createAdminUser" duration-ms="0" started-at="2019-11-30T09:33:17Z" description="createSupAdmin  erU  ser" depends-on-methods="client.core.CopyOfCreateUserTest.createSuperUser" finished-at="2019-11-30T09:33:17Z">
+        <test-method status="PASS" signature="createAdminUser()[pri:1, instance:client.core.UserCreattionTest@41eaa2]" name="createAdminUser" duration-ms="0" started-at="2019-11-30T11:47:18Z" description="createSupAdmin  erU  ser" depends-on-methods="client.core.UserCreattionTest.createSuperUser" finished-at="2019-11-30T11:47:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAdminUser -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2019-11-30T09:33:17Z" finished-at="2019-11-30T09:33:17Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:client.core.UserCreattionTest@41eaa2]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2019-11-30T11:47:18Z" finished-at="2019-11-30T11:47:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- client.core.CopyOfCreateUserTest -->
+      </class> <!-- client.core.UserCreattionTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
