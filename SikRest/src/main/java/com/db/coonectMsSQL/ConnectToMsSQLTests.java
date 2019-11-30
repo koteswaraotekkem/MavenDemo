@@ -4,16 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
 import org.testng.annotations.Test;
-
-import com.freecrm.base.CrmTestBase;
 
 public class ConnectToMsSQLTests {
 	
 	@Test
 	public void connectTomsSql() throws Throwable{
-		CrmTestBase vv= new CrmTestBase();
 		
 		String url = "jdbc:sqlserver://WINCTRL-L53BSHI;databaseName=userAccesDB;integratedSecurity=true";
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");

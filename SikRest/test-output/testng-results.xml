@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25585" started-at="2019-11-24T07:50:31Z" finished-at="2019-11-24T07:50:57Z">
+  <suite name="Default suite" duration-ms="24934" started-at="2019-11-30T09:32:52Z" finished-at="2019-11-30T09:33:17Z">
     <groups>
+      <group name="smoke">
+        <method signature="CopyOfCreateUserTest.createSuperUser()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="createSuperUser" class="client.core.CopyOfCreateUserTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test name="Default test" duration-ms="25585" started-at="2019-11-24T07:50:31Z" finished-at="2019-11-24T07:50:57Z">
-      <class name="com.freecrm.testcases.RegisterNewUserTest">
-        <test-method status="PASS" signature="bfrclss()[pri:0, instance:com.freecrm.testcases.RegisterNewUserTest@1ec2012]" name="bfrclss" is-config="true" duration-ms="12905" started-at="2019-11-24T07:50:31Z" finished-at="2019-11-24T07:50:44Z">
+    <test name="Default test" duration-ms="24934" started-at="2019-11-30T09:32:52Z" finished-at="2019-11-30T09:33:17Z">
+      <class name="client.core.CopyOfCreateUserTest">
+        <test-method status="PASS" signature="beforeClassInTest()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="beforeClassInTest" is-config="true" duration-ms="9372" started-at="2019-11-30T09:32:52Z" finished-at="2019-11-30T09:33:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bfrclss -->
-        <test-method status="PASS" signature="loginAsSuperUser()[pri:0, instance:com.freecrm.testcases.RegisterNewUserTest@1ec2012]" name="loginAsSuperUser" duration-ms="11982" started-at="2019-11-24T07:50:44Z" description="user creation" finished-at="2019-11-24T07:50:56Z">
+        </test-method> <!-- beforeClassInTest -->
+        <test-method status="PASS" signature="createSuperUser()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="createSuperUser" duration-ms="15516" started-at="2019-11-30T09:33:02Z" description="creating Super User" finished-at="2019-11-30T09:33:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAsSuperUser -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.freecrm.testcases.RegisterNewUserTest@1ec2012]" name="afterMethod" is-config="true" duration-ms="656" started-at="2019-11-24T07:50:56Z" finished-at="2019-11-24T07:50:57Z">
+        </test-method> <!-- createSuperUser -->
+        <test-method status="PASS" signature="runbeforeMethod()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="runbeforeMethod" is-config="true" duration-ms="0" started-at="2019-11-30T09:33:02Z" finished-at="2019-11-30T09:33:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.freecrm.testcases.RegisterNewUserTest -->
+        </test-method> <!-- runbeforeMethod -->
+        <test-method status="PASS" signature="runbeforeMethod()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="runbeforeMethod" is-config="true" duration-ms="1" started-at="2019-11-30T09:33:17Z" finished-at="2019-11-30T09:33:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runbeforeMethod -->
+        <test-method status="PASS" signature="createAdminUser()[pri:1, instance:client.core.CopyOfCreateUserTest@f777e8]" name="createAdminUser" duration-ms="0" started-at="2019-11-30T09:33:17Z" description="createSupAdmin  erU  ser" depends-on-methods="client.core.CopyOfCreateUserTest.createSuperUser" finished-at="2019-11-30T09:33:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAdminUser -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:client.core.CopyOfCreateUserTest@f777e8]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2019-11-30T09:33:17Z" finished-at="2019-11-30T09:33:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- client.core.CopyOfCreateUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

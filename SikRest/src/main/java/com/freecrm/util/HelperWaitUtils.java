@@ -14,19 +14,31 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.freecrm.base.CRMTestBase;
 import com.google.common.base.Function;
 
-public class HelperWaitUtils {
+public class HelperWaitUtils extends CRMTestBase{
 	public static final String TIME_OUT_EXCEPTION_LOG = "Could not find the expected element";
 
 	public static void clearAndSetText(WebDriver driver, By locator, String text) {
 		driver.findElement(locator).clear();
+		waitInSeconds(9);
 		driver.findElement(locator).sendKeys(text);
 	}
 
 	public static void clickOnElement(WebDriver driver, By locator) {
 		driver.findElement(locator).click();
 
+	}
+	
+	public static void waitInSeconds(int seconds){
+		
+		try {
+			Thread.sleep(1000*seconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public static void waitForElementToBeClickable(WebDriver driver, By by) {
@@ -37,7 +49,7 @@ public class HelperWaitUtils {
 	public static void fluentWait(WebDriver driver,
 			ExpectedCondition<WebElement> condition, Integer timeout) {
 		timeout = timeout != null ? timeout : 5;
-		Wait<WebDriver> wait = new FluentWait<>(driver)
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(timeout, TimeUnit.SECONDS)
 				.pollingEvery(5, TimeUnit.SECONDS)
 				.ignoring(NoSuchElementException.class);
@@ -65,11 +77,10 @@ public class HelperWaitUtils {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		Wait<WebDriver> wait = new FluentWait<>(driver).withTimeout(30,
+		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(30,
 				TimeUnit.SECONDS).pollingEvery(5, TimeUnit.MILLISECONDS);
 		// wait.until(new ExpectedCondition<Boolean>() {
 		Function<WebDriver, Boolean> function = new Function<WebDriver, Boolean>() {
-			@Override
 			public Boolean apply(WebDriver wdriver) {
 				try {
 					List<WebElement> clickables = wdriver.findElements(locator);

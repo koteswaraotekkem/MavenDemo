@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.freecrm.base.CrmTestBase;
+import com.freecrm.base.CRMTestBase;
 import com.freecrm.util.HelperWaitUtils;
 
-public class LoginPage extends CrmTestBase{
+public class LoginPage extends CRMTestBase{
 
 	//@FindBy(name="username") public  By userNameFindBy;
 	public By userName = By.name("username");
@@ -33,10 +33,11 @@ public class LoginPage extends CrmTestBase{
 	
 	public HomePage login(){
 		HelperWaitUtils.waitForElementToBeClickable(driver, userName);
+		/*HelperWaitUtils.waitForElementToBeClickable(driver, userName);
 		HelperWaitUtils.clearAndSetText(driver, userName, prop.getProperty("username"));
-		HelperWaitUtils.clearAndSetText(driver, userName, prop.getProperty("password"));
+		HelperWaitUtils.clearAndSetText(driver, password, prop.getProperty("password"));
 		HelperWaitUtils.waitForIsClickable(driver, LoginButton);
-		HelperWaitUtils.clickOnElement(driver, LoginButton);
+		HelperWaitUtils.clickOnElement(driver, LoginButton);*/
 		return new HomePage();
 	}
 	

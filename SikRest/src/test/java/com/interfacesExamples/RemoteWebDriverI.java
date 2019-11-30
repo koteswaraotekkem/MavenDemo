@@ -4,13 +4,11 @@ import java.io.IOException;
 
 public class RemoteWebDriverI  implements WebDriverI{
 
-	@Override
 	public void findElement() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void get(String url) {
 		if (url=="chrome") {
 			try {

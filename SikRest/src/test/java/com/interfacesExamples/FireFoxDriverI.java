@@ -7,13 +7,11 @@ public class FireFoxDriverI implements WebDriverI{
 	public static void main(String[] args) {
 	}
 
-	@Override
 	public void findElement() {
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
 	public void get(String url) {
 	System.out.println("ama get method");
 	
