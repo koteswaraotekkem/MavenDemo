@@ -3,14 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="client.core.CreateUserTests">
+      <class name="com.freecrm.testcases.UserCreattionTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="createSuperUser"/>
+          <include name="afterMethod"/>
+          <include name="createSuperUser_UserCreattionTest"/>
           <include name="runbeforeMethod"/>
           <include name="beforeClassInTest"/>
+          <include name="befrClass"/>
+          <include name="createAdminUser_UserCreattionTest"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- client.core.CreateUserTests -->
+      </class> <!-- com.freecrm.testcases.UserCreattionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

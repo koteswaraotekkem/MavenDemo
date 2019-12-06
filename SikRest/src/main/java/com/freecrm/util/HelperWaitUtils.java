@@ -18,12 +18,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.freecrm.base.CRMTestBase;
 import com.google.common.base.Function;
 
-public class HelperWaitUtils extends CRMTestBase{
+public class HelperWaitUtils {
 	public static final String TIME_OUT_EXCEPTION_LOG = "Could not find the expected element";
 
 	public static void clearAndSetText(WebDriver driver, By locator, String text) {
 		driver.findElement(locator).clear();
-		waitInSeconds(9);
+		sleepInSeconds(9);
 		driver.findElement(locator).sendKeys(text);
 	}
 
@@ -32,7 +32,7 @@ public class HelperWaitUtils extends CRMTestBase{
 
 	}
 	
-	public static void waitInSeconds(int seconds){
+	public static void sleepInSeconds(int seconds){
 		
 		try {
 			Thread.sleep(1000*seconds);

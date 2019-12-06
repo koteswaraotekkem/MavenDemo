@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [regression]">
+  <test thread-count="5" name="configurations Tests(failed)">
     <classes>
-      <class name="client.core.CreateUserTests">
+      <class name="com.freecrm.testcases.DulicateCreateUserTst">
         <methods>
+          <include name="createSuperUser_CopyOfCreateUserTst"/>
           <include name="closeBrowser"/>
-          <include name="createSuperUser"/>
-          <include name="runbeforeMethod"/>
+          <include name="befrClass"/>
           <include name="beforeClassInTest"/>
+          <include name="afterMethod"/>
+          <include name="runbeforeMethod"/>
         </methods>
-      </class> <!-- client.core.CreateUserTests -->
+      </class> <!-- com.freecrm.testcases.DulicateCreateUserTst -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- configurations Tests(failed) -->
+</suite> <!-- Failed suite [regression] -->

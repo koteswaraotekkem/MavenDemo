@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="regression" configfailurepolicy="continue">
+<test name="configurations Tests" preserve-order="true">
+<packages>
+<package name=".*"></package>
+</packages>
+<!-- <classes>
+ 	<class name="com.freecrm.testcases.UserCreattionTest" >
+ 	<methods>
+ 	 <exclude name="createSuperUser_UserCreattionTest"></exclude>
+ 	</methods>
+ 	</class>
+ 	<class name="com.freecrm.testcases.DulicateCreateUserTst" >
+  	 <methods>
+  	   <include name="createSuperUser_CopyOfCreateUserTst"></include>
+  	 </methods>
+  		</class>
+</classes> -->
+</test>
+</suite>

@@ -28,7 +28,7 @@ public class crmNavBar extends CRMTestBase{
 	
 	
 	public void cickOnCalanderMenu(){
-		HelperWaitUtils.waitInSeconds(9);
+		HelperWaitUtils.sleepInSeconds(9);
 		driver.findElement(CalenderMenu).click();
 		
 	}

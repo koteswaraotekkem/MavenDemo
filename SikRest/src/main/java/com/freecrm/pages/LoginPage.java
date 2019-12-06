@@ -33,11 +33,11 @@ public class LoginPage extends CRMTestBase{
 	
 	public HomePage login(){
 		HelperWaitUtils.waitForElementToBeClickable(driver, userName);
-		/*HelperWaitUtils.waitForElementToBeClickable(driver, userName);
+		HelperWaitUtils.waitForElementToBeClickable(driver, userName);
 		HelperWaitUtils.clearAndSetText(driver, userName, prop.getProperty("username"));
 		HelperWaitUtils.clearAndSetText(driver, password, prop.getProperty("password"));
 		HelperWaitUtils.waitForIsClickable(driver, LoginButton);
-		HelperWaitUtils.clickOnElement(driver, LoginButton);*/
+		HelperWaitUtils.clickOnElement(driver, LoginButton);
 		return new HomePage();
 	}
 	
