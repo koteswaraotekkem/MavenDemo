@@ -73,7 +73,6 @@ public class DulicateCreateUserTst extends CRMTestBase {
 	public void createSuperUser_CopyOfCreateUserTst(){
 		testSteps.log(LogStatus.PASS, " Started test class");
 		LoginPage1 loginObj = new LoginPage1();
-		assertNull(loginObj, "Problem with Login Page, please checkin it");
 		String titiel = loginObj.getHomePageTititle();
 		
 		assertFalse(loginObj.isUserNameDispalyed(), "Username is not displayed in home page");
