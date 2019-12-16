@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Listeners Suite]">
+  <listeners>
+    <listener class-name="com.freecrm.listeners.ListernersDemo"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.freecrm.listeners.UseListenersInTest">
+        <methods>
+          <include name="testcase002"/>
+        </methods>
+      </class> <!-- com.freecrm.listeners.UseListenersInTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [TestNG Listeners Suite] -->

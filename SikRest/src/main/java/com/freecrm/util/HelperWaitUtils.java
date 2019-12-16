@@ -45,9 +45,27 @@ public class HelperWaitUtils {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
 	}
+	
+	public static void preseneceOfElelemntLocated(WebDriver driver, By by) {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		WebDriverWait wait = new WebDriverWait(driver, 40);
+		System.out.println("waiting for elemnt");
+		
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(by));
+	}
+	
+	public static void  waitForElemToBeClickable(WebDriver driver, By by) {
+		WebDriverWait wait = new WebDriverWait(driver, 60);
+		 wait.until(ExpectedConditions.elementToBeClickable(by));
+	}
 
 	public static void fluentWait(WebDriver driver,
-			ExpectedCondition<WebElement> condition, Integer timeout) {
+			ExpectedCondition<By> condition, Integer timeout) {
 		timeout = timeout != null ? timeout : 5;
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(timeout, TimeUnit.SECONDS)
@@ -78,8 +96,8 @@ public class HelperWaitUtils {
 			e1.printStackTrace();
 		}
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(30,
-				TimeUnit.SECONDS).pollingEvery(5, TimeUnit.MILLISECONDS);
-		// wait.until(new ExpectedCondition<Boolean>() {
+				TimeUnit.SECONDS).pollingEvery(2, TimeUnit.MILLISECONDS);
+		
 		Function<WebDriver, Boolean> function = new Function<WebDriver, Boolean>() {
 			public Boolean apply(WebDriver wdriver) {
 				try {

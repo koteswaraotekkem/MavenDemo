@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [regression]">
-  <test thread-count="5" name="configurations Tests(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.freecrm.testcases.DulicateCreateUserTst">
         <methods>
@@ -9,10 +9,12 @@
           <include name="closeBrowser"/>
           <include name="befrClass"/>
           <include name="beforeClassInTest"/>
+          <include name="pleaseSkipME"/>
           <include name="afterMethod"/>
           <include name="runbeforeMethod"/>
+          <include name="createAdminUser_CopyOfCreateUserTst"/>
         </methods>
       </class> <!-- com.freecrm.testcases.DulicateCreateUserTst -->
     </classes>
-  </test> <!-- configurations Tests(failed) -->
-</suite> <!-- Failed suite [regression] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

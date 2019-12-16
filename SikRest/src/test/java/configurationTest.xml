@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name ="regression" configfailurepolicy="continue">
-<test name="configurations Tests" preserve-order="true">
+ <listeners>
+            <listener class-name="com.freecrm.listeners.ListernersDemo" /> </listeners>
+<test name="configurations Tests" preserve-order="true" >
 <packages>
 <package name=".*"></package>
 </packages>

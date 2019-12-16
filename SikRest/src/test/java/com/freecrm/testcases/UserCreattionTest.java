@@ -38,6 +38,9 @@ public class UserCreattionTest extends CRMTestBase {
 		System.out.println("----------------------------------------------------");
 		System.out.println("Starting the Test method "+ getCurrentClassName()+currentMethodName);
 		System.out.println("----------------------------------------------------");
+		
+		 
+		
 	}
 
 	private String getCurrentClassName(){
