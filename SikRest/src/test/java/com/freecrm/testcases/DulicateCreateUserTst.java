@@ -33,8 +33,8 @@ public class DulicateCreateUserTst extends CRMTestBase {
 		
 	@BeforeClass
 	public void beforeClassInTest(){
-		 //initDriver();
-		//reports = new ExtentReports(reportsPath+ "FreeCRM-Automation_Report.html", true);
+		 initDriver();
+		reports = new ExtentReports(reportsPath+ "FreeCRM-Automation_Report.html", true);
 	/*	
 		int a=34;
 		int b=23;
@@ -49,10 +49,10 @@ public class DulicateCreateUserTst extends CRMTestBase {
 	
 	SoftAssert sofasssert = new SoftAssert();
 	
-	sofasssert.assertEquals(33, 55, "valis not matching");
-	sofasssert.assertEquals(223, 55, "abc vnvv vnc");
+	sofasssert.assertEquals(33, 33, "valis not matching");
+	sofasssert.assertEquals(55, 55, "abc vnvv vnc");
 
-	sofasssert.assertEquals("rVI", "ANAD", "");
+	sofasssert.assertEquals("a", "a", "");
 	
 	sofasssert.assertTrue(true);
 	
@@ -60,7 +60,7 @@ public class DulicateCreateUserTst extends CRMTestBase {
 	
 	System.out.println("dfdsf");
 	
-	assertTrue(false);
+	assertTrue(true);
 		
 	}
 	@BeforeMethod

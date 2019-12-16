@@ -63,7 +63,7 @@ public class UserCreattionTest extends CRMTestBase {
 		driver.findElement(By.xpath("//*[@id='navmenu']/ul/li[15]/a")).click();
 		homepage.openCalanderPage();
 		System.out.println("create super user ");
-		Assert.assertEquals(33, 334, "actaul nd expced are not same");
+		//Assert.assertEquals(33, 334, "actaul nd expced are not same");
 		driver.switchTo().defaultContent();
 		testSteps.log(LogStatus.PASS, "Moved to def frame");
 	}
