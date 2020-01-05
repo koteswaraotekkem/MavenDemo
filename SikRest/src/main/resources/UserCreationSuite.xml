@@ -1,9 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="configTestSuite" configfailurepolicy="continue">
 	<test name="ConfigTests"  preserve-order="true">
 		<classes>
-         <class name="com.freecrm.testcases.DulicateCreateUserTst"/>
             <class name="com.freecrm.testcases.UserCreattionTest"/>
+            <class name ="com.freecrm.testcases.CreateUserTest"/>
             
 		</classes>
 	</test>
